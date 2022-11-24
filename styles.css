@@ -1,0 +1,30 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+  
+  #container {
+    display: grid;
+    grid-gap: 0;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    height: auto;
+    width: 600px;
+    border: 1px solid grey;
+  }
+  
+  .grid-item {
+    content: "";
+    padding-bottom: 100%;
+    /*border: 1px solid black; */
+  }
+
+button {
+    padding: 20px 50px;
+    background-color: darkred;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
